@@ -2,28 +2,39 @@ package exercicios;
 
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Retangle;
 
 public class Exercicio1 {
 
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 		
-		Retangle x;
-		x = new Retangle();
+		
+		System.out.println("Digite um numero");
+		int n =sc.nextInt();
 		
 		
-		System.out.println("Escreva a width e a height:");
-		x.width = sc.nextDouble();
-		x.height = sc.nextDouble();
+		int [] vect = new int[n];
 		
-		System.out.printf("AREA = %.2f%n", x.area());
-		System.out.printf("PERIMETER = %.2f%n", x.perimeter());
-		System.out.printf("DIAGONAL = %.2f%n", x.diagonal());
+		for (int i = 0; i < n;i++) {
+			System.out.println("Digite um numero");
+			vect[i] = sc.nextInt();
+		}
 		
-		sc.close();			
+		for (int i = 0; i<n;i++) {
+			if(vect[i] < 0) {
+				System.out.println(vect[i]);
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	sc.close();	
 	}
-
 }
